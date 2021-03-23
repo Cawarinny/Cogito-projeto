@@ -1,0 +1,18 @@
+{
+    "Portfolio": {
+        "Indices": {
+            "0": "DJ Brazil Titans 20 ADR",
+            "1": "S&P 500 Futuros",
+            "2": "Petr\u00f3leo WTI",
+            "3": "S&P 500 VIX",
+            "4": "\u00cdndice D\u00f3lar Futuros"
+        },
+        "Var. %": {
+            "0": "-0,46%",
+            "1": "+0,11%",
+            "2": "-4,65%",
+            "3": "+0,53%",
+            "4": "+0,59%"
+        }
+    }
+}
