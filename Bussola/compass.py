@@ -1,13 +1,8 @@
 import json
 import graphic as gp
-from flask import Flask
 import webScraping as ws
 import readPortfolio as rp
 import readMajorIndices as rm
-
-app = Flask('Bussola')
-
-@app.route('/compass')
 
 def compass():
     loop = True
@@ -30,5 +25,3 @@ def compass():
             print('Error em Compass')
 
     return dadosGraphic
-
-app.run()
