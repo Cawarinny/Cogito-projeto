@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/compass')
 def compassApi():
-    dadosGraphic = loopCompass()
+    dadosGraphic = loop.loopCompass()
     return dadosGraphic
 
 app.run()
