@@ -1,1 +1,2 @@
-web: python api/index.py
+web: cd api
+web: python index.py
