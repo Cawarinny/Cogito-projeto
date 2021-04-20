@@ -5,7 +5,7 @@ import readPortfolio as rp
 import readMajorIndices as rm
 import compass as cp
 
-def compass():
+def loopCompass():
     loop = True
     while loop:
         try:
