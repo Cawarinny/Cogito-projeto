@@ -1,7 +1,7 @@
 flask==1.1.2
 beautifulsoup4==4.9.3
 datetime==4.3
-lxml==4.6.2
+lxml>=4.6.3
 pandas==1.2.3
 requests2==2.16.0
 selenium==3.141.0
