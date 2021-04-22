@@ -13,7 +13,7 @@ def webScraping():
     # Iniciando Browser
     option = Options()
     option.headless = True
-    driver = webdriver.firefox.firefox_binary.FirefoxBinary(firefox_path='./geckodriver.exe')
+    driver = webdriver.firefox.firefox_binary.FirefoxBinary(firefox_path='geckodriver.exe')
     driver = webdriver.Firefox(options=option)
     
     try:
