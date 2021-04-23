@@ -1,3 +1,4 @@
+import os
 import compass as cp
 from flask import Flask
 
