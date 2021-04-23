@@ -13,7 +13,8 @@ def webScraping():
     # Iniciando Browser
     option = Options()
     option.headless = True
-    #driver = webdriver.firefox.firefox_binary.FirefoxBinary(firefox_path='PATH')
+    driver = webdriver.FirefoxOptions.binary_location(LD_LIBRARY_PATH)
+    driver = webdriver.Firefox(executable_path=PATH)
     driver = webdriver.Firefox(options=option)
     
     try:
