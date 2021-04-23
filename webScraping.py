@@ -8,7 +8,7 @@ from selenium import webdriver
 
 def webScraping():
     # Em segundos
-    sleep = 20
+    sleep = 10
 
     # Iniciando Browser
     co = webdriver.ChromeOptions()
