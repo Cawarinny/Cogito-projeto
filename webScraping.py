@@ -1,3 +1,4 @@
+import os
 import json
 import requests
 import pickle
@@ -11,11 +12,12 @@ def webScraping():
     sleep = 20
 
     # Iniciando Browser
-    option = Options()
-    option.headless = True
-    driver = webdriver.FirefoxOptions.binary_location(LD_LIBRARY_PATH)
-    driver = webdriver.Firefox(executable_path=PATH)
-    driver = webdriver.Firefox(options=option)
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
     
     try:
         # Url usados no processo
