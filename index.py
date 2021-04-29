@@ -1,10 +1,12 @@
 import os
 import compass as cp
 from flask import Flask
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 
 @app.route('/')
+@cross_origin()
 def compassApi():
     dadosGraphic = cp.compass()
     return dadosGraphic
